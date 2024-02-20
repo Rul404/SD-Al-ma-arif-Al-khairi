@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Bagian Header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0 4px black;
+    padding: 10px;
+}
+
+nav h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav ul .btn {
+    display: none;
+}
+
+.navbar-nav ul li {
+    list-style-type: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.2 ease-in-out;
+}
+
+.navbar-nav ul li:hover {
+    background: #979797;
+}
+
+.navbar-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    display: none;
+}
+/* Bagian Header*/
+
+/* Bagian Home*/
+#home {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+    
+}
+
+#home .content img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1f1e1e;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+}
+
+.content .p {
+    text-align: center;
+
+}
+
+#home button {
+    border: none;
+    background: #1f1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+/* Bagian Home*/
+
+/* Bagian Abut */
+#about {
+    padding: 70px 0px 0px 0px;
+}
+
+#about .content-about {
+    height: 400px;
+    display: flex;
+    margin: 30px;
+    background: #979797;
+}
+
+#about .kolom-1 {
+    flex: 1 1 10rem;
+}
+
+.kolom-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+#about .kolom-2 {
+    flex: 1 1 10rem;
+    padding: 0px 10px 10px 10px;
+}
+
+.kolom-2 h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Bagian Pengajar*/
+#guru {
+    height: 100vh;
+    padding: 70px 0px 0px 0px;
+}
+
+#guru h1
+, #about h1,
+#contact h1 {
+    text-align: center;
+}
+
+#guru .content,
+#contact .content {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#guru .kolom {
+    width: 280px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#guru .kolom img {
+    width: 90px;
+    height: 85px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.kolom h3 {
+    margin-top: 30px;
+    line-height: 3px;
+}
+
+
+.kolom button {
+    border: none;
+    background: #1f1e1e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.selengkap {
+    overflow: hidden;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    height: 90vh;
+    background: #979797;
+    transition: 0.6s ease-in-out;
+}
+
+.selengkap .bungkus {
+    padding: 10px;
+}
+
+.selengkap h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.selengkap p {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.selengkap button {
+    font-size: 17px;
+    position: absolute;
+    top: 678px;
+    width: 100%;
+    padding: 10px;
+}
+/* Bagian Pengajar*/
+
+/* Bagian Contact */
+#contact {
+    padding: 70px 40px 0px 40px;
+}
+
+#contact .kolom {
+    background: #979797;
+    width: 280px;
+    height: 230px;
+}
+
+#contact img {
+    margin-top: 14px;
+    border-radius: 10px;
+    width: 60px;
+}
+
+
+#contact button {
+    width: 100%;
+    padding: 10px 22px;
+    margin-top: 30px;
+}
+
+#contact button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lokasi {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    transition: 4s ease-in-out;
+}
+
+.lokasi iframe {
+    width: 220vh;
+    height: 100vh;
+}
+
+.lokasi button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    padding: 16px 10px;
+    transition: 0.5s ease-in-out;
+}
+/* Bagian Footer*/
+footer {
+    background: #979797;
+    width: 100%;
+    padding: 7px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+@media (max-width:800px) {
+    .lokasi iframe {
+        width: 356px;
+        height: 87vh;
+        position: sticky;
+        bottom: 0;
+    }
+
+    .navbar-nav ul {
+        display: none;
+        background: #979797;
+        box-shadow: 0 0 8px black;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 290%;
+        top: 50px;
+        left: 0px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .navbar-nav ul li {
+        width: 100%;
+        padding: 9px;
+    }
+
+    .navbar-nav ul li:hover {
+        background: #fff;
+        border-radius: 0;
+    }
+
+    .navbar-nav ul .btn {
+        display: flex;
+        position: absolute;
+        border: none;
+        background: #1f1e1e;
+        padding: 5px 8px;
+        border-radius: 7px;
+        color: #fff;
+        right: 10px;
+        bottom: 7px;
+    }
+
+    nav img {
+        display: block;
+    }
+
+    /* Bagian Home */
+    #home .content {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .content h3 {
+        font-size: 15px;
+        line-height: 1px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+        line-height: normal;
+    }
+
+    .content .p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Bagian pengajar */
+    #contact {
+        height: auto;
+    }
+
+    #about .content-about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #guru .content {
+        display: flex;
+        justify-content: flex-start;
+        overflow: scroll;
+        margin-top: 25px;
+        margin-bottom: -20px;
+        gap: 20px;
+    }
+
+
+    #guru .kolom button{
+        width: 256px;
+        margin-top: 26px;
+    }
+
+    .content .kolom {
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    #contact .content {
+        flex-direction: column;
+        height: auto;
+        margin-top: -50px;
+    }
+
+    #contact h1 {
+        margin-bottom: 90px;
+    }
+}
