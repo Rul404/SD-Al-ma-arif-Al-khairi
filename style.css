@@ -75,6 +75,7 @@ nav img {
 #home .content img {
     width: 200px;
     margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 .content h3 {
@@ -160,7 +161,7 @@ nav img {
 }
 
 #guru .kolom {
-    width: 300px;
+    width: 290px;
     background: #979797;
     border-radius: 10px;
 }
@@ -194,7 +195,7 @@ nav img {
     position: absolute;
     top: 49px;
     left: 0;
-    height: 100vh;
+    height: 700px;
     background: #979797;
     transition: 0.6s ease-in-out;
 }
@@ -264,8 +265,9 @@ nav img {
     display: none;
     width: 100%;
     position: absolute;
-    top: 60px;
-    left: 10px;
+    top: 50px;
+    left: 0px;
+    right: 0px;
     bottom: 0px;
     z-index: 999999;
     transition: 4s ease-in-out;
@@ -379,7 +381,7 @@ footer p {
     }
 
     #guru .kolom button{
-        width: 300px;
+        width: 290px;
         margin-top: 30px;
     }
 
